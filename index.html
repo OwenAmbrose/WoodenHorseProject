@@ -52,7 +52,7 @@
 					</select>
 				</div>
 				<div class="second step">
-					<h2>2. All the toys!</h2>
+					<h2>2. Enjoy!</h2>
 					<div id="postcard">
 						<p id="greeting">To View a Toy:</p>
 						<p id="state-heading">Choose an option!</p>
@@ -99,7 +99,7 @@
 			// console.log('state index: ' + states.selectedIndex);
 			// console.log('state name: ' + states.options[states.selectedIndex].text);
 			// console.log('img/' + states.value + '@2x.jpg');
-			document.getElementById('postcard').style.backgroundImage = 'url(img/' + states.value + '@2x.jpg)';
+			document.getElementById('postcard').style.backgroundImage = 'url(img/' + states.value + '.jpg)';
 			document.getElementById('greeting').innerHTML = 'You are viewing';
 			document.getElementById('state-heading').innerHTML = states.options[states.selectedIndex].text;
 		}
