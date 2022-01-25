@@ -99,13 +99,14 @@ select {
 }
 footer {
 	text-align: center;
-	border-top: 1px solid #c0c0c0;
+
 	margin-top: 150px;
-	padding: 20px;
+
+	background-color: #414141;
 }
 footer p {
 	font-weight: 300;
-	color: #575757;
+	color: #cfcfcf;
 	margin-bottom: 0;
 }
 
@@ -168,6 +169,7 @@ footer p {
 	}
 	footer {
 		padding: 30px;
+		color: black;
 	}
 }
 body, html {
@@ -260,4 +262,7 @@ header .contentWrapper {
 }
 .textfield:focus {
 	background: #FBF8D2;
+}
+button{
+	background-color:#ff914d;
 }

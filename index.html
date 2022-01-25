@@ -14,7 +14,19 @@
 	<div class="hero-image">
   <div class="hero-text">
     <h1>Little Bird Toys</h1>
-    <p>Description</p>
+    <p>43 Main St, Toms River, NJ 08753 |
+Phone:
+(717) 123-1234 <br>
+Store Hours: <br>
+WEEKDAYS <br>
+7:00 AM to 4:30 PM <br>
+SATURDAY <br>
+10:00 AM to 2:00 PM <br>
+All socials (FB, Insta, Twitter, Snapchat) |
+ @LittleBirdToyCo <br>
+ <button><a href="#Toys">Toys</a>
+ <button><a href="#Feedback">Feedback</a>
+</p>
   </div>
 </div>
 	<div class="outer-wrapper">
@@ -22,9 +34,10 @@
 			<header>
 
 			</header>
+
 			<main role="main">
 				<div class="first step">
-					<h2>1. Choose a Toy</h2>
+					<h2 id="Toys">1. Choose a Toy</h2>
 					<select name="states" id="states">
 						<option selected disabled value="empty-state">All Toys</option>
 						<option value="block1">Blocks</option>
@@ -73,7 +86,7 @@
 	<div class="contentWrapper">
 		<form action="" method="post" name="feedbackForm" id="feedbackForm">
 			<fieldset id="feedback">
-				<legend>Have any feedback? Leave it down below!</legend>
+				<legend id="Feedback">Have any feedback? Leave it down below!</legend>
 
 					<label for="nameField">Name:</label>
 					<input id="nameField" name="nameField" type="text" class="textfield" value="First and Last Name" onFocus="clearName();" onBlur="resetName();">
@@ -91,7 +104,14 @@
 	</div>
 </main>
 	<footer>
-		<p>Made in NY <br>Copyright © Postcard Generator</p>
+		<p>
+			43 Main St, Toms River, NJ 08753 |
+	Phone:
+	(717) 123-1234 <br>
+	All socials (FB, Insta, Twitter, Snapchat) |
+	 @LittleBirdToyCo
+</p>
+		<p>Made in Web Design and by Brandon Tepper and Owen Ambrose <br>Copyright © Little Bird Toys</p>
 	</footer>
 	<script>
 		var states = document.getElementById('states');
