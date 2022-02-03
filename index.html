@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<title>Postcard Generator</title>
+	<title>Little Bird Toys</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Boogaloo|Open+Sans:300,400|Oswald:700">
 	<link rel="stylesheet" href="css/main.css">
@@ -24,23 +24,39 @@ SATURDAY <br>
 10:00 AM to 2:00 PM <br>
 All socials (FB, Insta, Twitter, Snapchat) |
  @LittleBirdToyCo <br>
- <button><a href="#Toys">Toys</a>
- <button><a href="#Feedback">Feedback</a>
+
 </p>
   </div>
 </div>
 	<div class="outer-wrapper">
 		<div class="content-wrapper">
+      <section class="nav">
+     <ul>
+         <li><a href="#">About Us</a></li>
+         <li><a href="#OurStory">Our Story</a></li>
+         <li><a href="#Toys">Toys</a></li>
+         <li><a href="#Feedback">Leave Feedback</a></li>
+       </ul>
+     </section>
+
 			<header>
 
 			</header>
-
+        <hr>
+        <p id="OurStory">
+          <h3>Our Story:</h3>
+          <center>
+Our handcrafted classic, wooden toys  are designed to bring out that slowness in your home. From Planes, trains, automobiles and boats, playsets, all of our wooden toys are designed to spark imagination. The going may be a little slower, but oh the things you’ll see along the way!
+Since 2018, Little Bird Toys has delighted families looking for quality children’s toys.  Our collection of heirloom quality products are built to stand the test of time and to be enjoyed from sibling to sibling and generation to generation.
+          </center>
+        <p>
+        <hr>
 			<main role="main">
 				<div class="first step">
 					<h2 id="Toys">1. Choose a Toy</h2>
 					<select name="states" id="states">
 						<option selected disabled value="empty-state">All Toys</option>
-						<option value="block1">Blocks</option>
+						<option value="block1">Blocks:</option>
 						<option value="block2">Blocks 2</option>
 						<option value="block3">Blocks 3</option>
 						<option value="block4">Blocks 4</option>
@@ -83,7 +99,7 @@ All socials (FB, Insta, Twitter, Snapchat) |
 	<br>
 
 	<main role="main">
-	<div class="contentWrapper">
+	<div class="contentWrapper" id="cool">
 		<form action="" method="post" name="feedbackForm" id="feedbackForm">
 			<fieldset id="feedback">
 				<legend id="Feedback">Have any feedback? Leave it down below!</legend>
@@ -102,6 +118,9 @@ All socials (FB, Insta, Twitter, Snapchat) |
 			</fieldset>
 		</form>
 	</div>
+  <center>
+  <img class="LittleBirdLogo" src="https://i.imgur.com/J8pzMW4.png">
+  <center>
 </main>
 	<footer>
 		<p>
@@ -163,5 +182,4 @@ All socials (FB, Insta, Twitter, Snapchat) |
 		}
 	</script>
 </body>
-
 </html>
