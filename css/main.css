@@ -70,7 +70,7 @@ select {
 	height: 36px;
 	padding-left: 0.5em;
 }
-#postcard {
+#toydisplay {
 	width: 280px;
 	height: 202px;
 	position: absolute;
@@ -86,7 +86,7 @@ select {
 	color: black;
 	margin-bottom: 2px;
 }
-#state-heading {
+#toy-heading {
 	font-family: 'Oswald', sans-serif;
 	font-weight: bold;
 	text-align: center;
@@ -127,7 +127,7 @@ footer p {
 	select {
 		width: 300px;
 	}
-	#postcard {
+	#toydisplay {
 		width: 406px;
 		height: 292px;
 		padding-top: 88px;
@@ -136,7 +136,7 @@ footer p {
 		font-size: 28px;
 		margin-bottom: 2px;
 	}
-	#state-heading {
+	#toy-heading {
 		font-size: 50px;
 	}
 	footer {
@@ -283,6 +283,10 @@ header .contentWrapper {
 }
 .nav li a:hover {
  background-color: rgb(221, 182, 131);
+}
+nav{
+    margin: 0 auto;
+    text-align: center;
 }
 #cool {
 	background-color:#FBF8D2;

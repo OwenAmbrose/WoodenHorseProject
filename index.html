@@ -30,14 +30,18 @@ All socials (FB, Insta, Twitter, Snapchat) |
 </div>
 	<div class="outer-wrapper">
 		<div class="content-wrapper">
+
       <section class="nav">
      <ul>
+       <center>
          <li><a href="#">About Us</a></li>
          <li><a href="#OurStory">Our Story</a></li>
          <li><a href="#Toys">Toys</a></li>
          <li><a href="#Feedback">Leave Feedback</a></li>
+         </center>
        </ul>
      </section>
+
 
 			<header>
 
@@ -65,7 +69,7 @@ Since 2018, Little Bird Toys has delighted families looking for quality children
 			<main role="main">
 				<div class="first step">
 					<h2 id="Toys">1. Choose a Toy</h2>
-					<select name="states" id="states">
+					<select name="toys" id="toys">
 						<option selected disabled value="empty-state">All Toys</option>
 						<option value="block1">Blocks:</option>
 						<option value="block2">Blocks 2</option>
@@ -93,9 +97,9 @@ Since 2018, Little Bird Toys has delighted families looking for quality children
 				</div>
 				<div class="second step">
 					<h2>2. Enjoy!</h2>
-					<div id="postcard">
+					<div id="toydisplay">
 						<p id="greeting">To View a Toy:</p>
-						<p id="state-heading">Choose an option!</p>
+						<p id="toy-heading">Choose an option!</p>
 					</div>
 				</div>
 			</main>
@@ -124,7 +128,7 @@ Since 2018, Little Bird Toys has delighted families looking for quality children
 					<label for="messageField">Message:</label>
 					<input id="messageField" name="messageField" type="text" class="textfield" value="Message Here!" onFocus="clearMessage();" onBlur="resetMessage();">
 
-					<input id="submit" type="submit" name="submit" value="Submit!">
+					<input id="submit" type="submit" name="submit" value="Submit!" onClick="recievedMessage();">
 
 			</fieldset>
 		</form>
@@ -147,14 +151,14 @@ Since 2018, Little Bird Toys has delighted families looking for quality children
     <p>Copyright © Little Bird Toys</p>
 	</footer>
 	<script>
-		var states = document.getElementById('states');
-		states.onchange = function() {
+		var toys = document.getElementById('toys');
+		toys.onchange = function() {
 			// console.log('state index: ' + states.selectedIndex);
 			// console.log('state name: ' + states.options[states.selectedIndex].text);
 			// console.log('img/' + states.value + '@2x.jpg');
-			document.getElementById('postcard').style.backgroundImage = 'url(img/' + states.value + '.jpg)';
+			document.getElementById('toydisplay').style.backgroundImage = 'url(img/' + toys.value + '.jpg)';
 			document.getElementById('greeting').innerHTML = 'You are viewing';
-			document.getElementById('state-heading').innerHTML = states.options[states.selectedIndex].text;
+			document.getElementById('toy-heading').innerHTML = toys.options[toys.selectedIndex].text;
 		}
 
 // Form field stuff //
@@ -193,7 +197,12 @@ Since 2018, Little Bird Toys has delighted families looking for quality children
 			if (document.getElementById('emailField').value == ''){
 				document.getElementById('emailField').value= 'example: awesome@gmail.com'
 			}
-		}
+    }
+    //Submit Information Recieved Alert Message//
+    function recievedMessage(){
+      alert("We Recieved Your Feedback!")
+    }
+
 	</script>
 </body>
 </html>
